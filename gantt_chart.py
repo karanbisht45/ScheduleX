@@ -2,6 +2,8 @@ import streamlit as st
 import subprocess
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+import platform
 
 def generate_cpp_input(n, processes, algo_choice, quantum):
     """Generate formatted input for the C++ scheduling program."""
@@ -17,8 +19,16 @@ def get_process_data(n, processes, algo_choice, quantum):
     """Run the C++ scheduler, parse its output, and return process data."""
     cpp_input = generate_cpp_input(n, processes, algo_choice, quantum)
 
+    # Detect platform & pick correct executable
+    exe_name = "a.exe" if platform.system() == "Windows" else "./a.out"
+    exe_path = os.path.join(os.path.dirname(__file__), exe_name)
+
+    if not os.path.exists(exe_path):
+        st.error(f"Executable not found: {exe_path}. Please compile your C++ code first.")
+        return pd.DataFrame()
+
     # Execute C++ program
-    result = subprocess.run(["./a.out"], input=cpp_input, text=True, capture_output=True)
+    result = subprocess.run([exe_path], input=cpp_input, text=True, capture_output=True)
 
     # Debugging: Show raw output from C++
     st.text("Raw C++ Output:\n" + result.stdout)

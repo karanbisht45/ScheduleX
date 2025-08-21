@@ -40,3 +40,9 @@ This project bridges **theory and practical implementation** by combining C++’
 
 ## 📂 Project Structure  
 
+ScheduleX/
+│── gantt_chart.py # Streamlit frontend for UI & visualization
+│── scheduler.cpp # C++ backend for CPU scheduling
+│── scheduler.exe # Compiled C++ executable (Windows)
+│── requirements.txt # Python dependencies
+│── README.md # Documentation

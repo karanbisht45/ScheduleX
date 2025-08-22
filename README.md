@@ -58,7 +58,12 @@ ScheduleX/
 ```bash
 git clone https://github.com/your-username/ScheduleX.git
 cd ScheduleX
+```
+
+### 2️⃣ Install Python Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 g++ scheduler.cpp -o scheduler.exe (For Windows)
 

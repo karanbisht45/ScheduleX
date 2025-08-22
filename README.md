@@ -46,3 +46,20 @@ ScheduleX/
 │── scheduler.exe # Compiled C++ executable (Windows)
 │── requirements.txt # Python dependencies
 │── README.md # Documentation
+
+---
+
+
+---
+
+## 🚀 Installation & Setup  
+
+### 1️⃣ Clone Repository  
+```bash
+git clone https://github.com/your-username/ScheduleX.git
+cd ScheduleX
+pip install -r requirements.txt
+g++ scheduler.cpp -o scheduler.exe
+g++ scheduler.cpp -o scheduler
+streamlit run gantt_chart.py
+

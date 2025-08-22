@@ -68,8 +68,12 @@ pip install -r requirements.txt
 ### 3️⃣ Compile C++ Backend
 For Windows :
 ```bash
-g++ scheduler.cpp -o scheduler.exe (For Windows)
+g++ scheduler.cpp -o scheduler.exe
 ```
+
+For Linux / MacOS:
+```bash
 g++ scheduler.cpp -o scheduler
+```
 streamlit run gantt_chart.py
 

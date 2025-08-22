@@ -75,5 +75,8 @@ For Linux / MacOS:
 ```bash
 g++ scheduler.cpp -o scheduler
 ```
-streamlit run gantt_chart.py
 
+### 4️⃣ Run the Application
+```bash
+streamlit run gantt_chart.py
+```

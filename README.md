@@ -59,7 +59,9 @@ ScheduleX/
 git clone https://github.com/your-username/ScheduleX.git
 cd ScheduleX
 pip install -r requirements.txt
-g++ scheduler.cpp -o scheduler.exe
+
+g++ scheduler.cpp -o scheduler.exe (For Windows)
+
 g++ scheduler.cpp -o scheduler
 streamlit run gantt_chart.py
 

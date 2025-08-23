@@ -1,8 +1,6 @@
 # ⚡ ScheduleX — The CPU Scheduler  
 
-![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?logo=python)  
-![Made with C++](https://img.shields.io/badge/Made%20with-C++-orange?logo=c%2B%2B)  
-![Streamlit](https://img.shields.io/badge/Powered%20By-Streamlit-ff4b4b?logo=streamlit)  
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?logo=python) ![Made with C++](https://img.shields.io/badge/Made%20with-C++-orange?logo=c%2B%2B)  ![Streamlit](https://img.shields.io/badge/Powered%20By-Streamlit-ff4b4b?logo=streamlit)   
 
 ---
 
